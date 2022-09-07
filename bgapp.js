@@ -1,8 +1,8 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.127.0/build/three.module.js'; 
 
-import { FontLoader } from "https://cdn.skypack.dev/three@0.133/examples/jsm/loaders/FontLoader.js";
+import { FontLoader } from "https://cdn.jsdelivr.net/npm/three@0.127.0/examples/jsm/loaders/FontLoader.js";
 
-import { TextGeometry } from "https://cdn.skypack.dev/three@0.133/examples/jsm/geometries/TextGeometry.js";
+import { TextGeometry } from "https://cdn.jsdelivr.net/npm/three@0.127.0/examples/jsm/geometries/TextGeometry.js";
 
 import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.127.0/examples/jsm/controls/OrbitControls.js";
 
