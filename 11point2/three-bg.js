@@ -41,7 +41,7 @@ loadingManager.onError = function () {
 
 
 const loader = new GLTFLoader(loadingManager);
-loader.load("https://cdn.jsdelivr.net/gh/micaparat/mic-server/color-shape_b.glb", function (gltf) {
+loader.load("https://cdn.jsdelivr.net/gh/micaparat/mic-server/11point2/color-shape_c_min.glb", function (gltf) {
 
     const worm = gltf.scene.children[0];
 
