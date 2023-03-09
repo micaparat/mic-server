@@ -1,1 +1,215 @@
-function _0xd20e(){var _0x114707=['23695623nUMaOC','Scene','appendChild','add','restart\x20pause\x20resume\x20pause','557770ghSYIO','setPixelRatio','LoadingManager','onLoad','https://d190a37qqyq8ij.cloudfront.net/model/tinyhuman.json','load','14992104JMKSPe','bottom_rock','PerspectiveCamera','Loading\x20finished','timeline','getObjectByName','position','addEventListener','913244UrGGzr','set','rotation','shards1','4658575knMtFp','1099108gKLyFM','boats','#fullpage','WebGLRenderer','https://d190a37qqyq8ij.cloudfront.net/model/scene3.json','6vHlKHf','innerHeight','2741872ABheNX','ObjectLoader','devicePixelRatio','top_pink','human','bottom\x20bottom','updateProjectionMatrix','resize','top\x20top','PointLight','log','render','defaults','sin','power1.inOut','registerPlugin','domElement','top_rock','innerWidth','getElementById','3yVHBRt','Object3D','threebg','setSize'];_0xd20e=function(){return _0x114707;};return _0xd20e();}var _0x257e76=_0x2a0a;(function(_0x2472fc,_0x2b74c9){var _0x16cb85=_0x2a0a,_0x4298ba=_0x2472fc();while(!![]){try{var _0x1f9a89=parseInt(_0x16cb85(0x9e))/0x1+parseInt(_0x16cb85(0xac))/0x2+-parseInt(_0x16cb85(0x95))/0x3*(parseInt(_0x16cb85(0xb1))/0x4)+-parseInt(_0x16cb85(0xb0))/0x5+-parseInt(_0x16cb85(0xb6))/0x6*(-parseInt(_0x16cb85(0xb8))/0x7)+-parseInt(_0x16cb85(0xa4))/0x8+parseInt(_0x16cb85(0x99))/0x9;if(_0x1f9a89===_0x2b74c9)break;else _0x4298ba['push'](_0x4298ba['shift']());}catch(_0x4177cb){_0x4298ba['push'](_0x4298ba['shift']());}}}(_0xd20e,0xe9fde));import*as _0x569c4a from'https://cdn.skypack.dev/three@0.133/build/three.module.js';var camera,scene,renderer,container,objectRotationGroup=new _0x569c4a['Object3D']();const clock=new _0x569c4a['Clock']();var objectDummy=new _0x569c4a[(_0x257e76(0x96))](),cTopRock=new _0x569c4a['Object3D'](),cBottomRock=new _0x569c4a['Object3D'](),cShards1=new _0x569c4a[(_0x257e76(0x96))](),cShards2=new _0x569c4a[(_0x257e76(0x96))](),cBoats=new _0x569c4a['Object3D'](),cTinyHuman=new _0x569c4a[(_0x257e76(0x96))]();let portraitMode=![];function _0x2a0a(_0x2dcefc,_0x5178ac){var _0xd20e67=_0xd20e();return _0x2a0a=function(_0x2a0a6d,_0x180ed5){_0x2a0a6d=_0x2a0a6d-0x8f;var _0x41960c=_0xd20e67[_0x2a0a6d];return _0x41960c;},_0x2a0a(_0x2dcefc,_0x5178ac);}var lightIntensity=0x1;window[_0x257e76(0x93)]/window[_0x257e76(0xb7)]<0x1&&(portraitMode=!![]);;init(),scene['add'](objectDummy),animate();if(portraitMode)var tinyHumanHeight=0x2;else var tinyHumanHeight=0x0;const loadingManager=new _0x569c4a[(_0x257e76(0xa0))]();loadingManager[_0x257e76(0xa1)]=function(){var _0x381b99=_0x257e76;console[_0x381b99(0xc2)](_0x381b99(0xa7));};const loader=new _0x569c4a[(_0x257e76(0xb9))](loadingManager);loader[_0x257e76(0xa3)](_0x257e76(0xb5),function(_0x5728bd){var _0xd0d9e1=_0x257e76;objectDummy[_0xd0d9e1(0x9c)](_0x5728bd),cTopRock[_0xd0d9e1(0x9c)](objectDummy[_0xd0d9e1(0xa9)](_0xd0d9e1(0x92)),objectDummy[_0xd0d9e1(0xa9)](_0xd0d9e1(0xbb))),cBottomRock[_0xd0d9e1(0x9c)](objectDummy[_0xd0d9e1(0xa9)](_0xd0d9e1(0xa5)),objectDummy[_0xd0d9e1(0xa9)]('bottom_pink')),cShards1[_0xd0d9e1(0x9c)](objectDummy[_0xd0d9e1(0xa9)](_0xd0d9e1(0xaf))),cShards2[_0xd0d9e1(0x9c)](objectDummy[_0xd0d9e1(0xa9)]('shards2')),cBoats[_0xd0d9e1(0x9c)](objectDummy[_0xd0d9e1(0xa9)](_0xd0d9e1(0xb2))),scene[_0xd0d9e1(0x9c)](cTopRock),scene[_0xd0d9e1(0x9c)](cBottomRock),scene[_0xd0d9e1(0x9c)](cShards1),scene[_0xd0d9e1(0x9c)](cShards2),scene['add'](cBoats);}),loader[_0x257e76(0xa3)](_0x257e76(0xa2),function(_0x48626a){var _0x5346b7=_0x257e76;objectDummy[_0x5346b7(0x9c)](_0x48626a),cTinyHuman[_0x5346b7(0x9c)](objectDummy['getObjectByName'](_0x5346b7(0xbc))),scene['add'](cTinyHuman);}),cTinyHuman[_0x257e76(0xaa)]['set'](0x0,tinyHumanHeight,0xf),cTinyHuman[_0x257e76(0xae)]['set'](0x0,Math['PI']+0.5,0x0),cTinyHuman['scale'][_0x257e76(0xad)](0.6,0.6,0.6);const light1=new _0x569c4a[(_0x257e76(0xc1))](0xc5f4a,lightIntensity);light1[_0x257e76(0xaa)][_0x257e76(0xad)](15.8,0xc,0x0);const light2=new _0x569c4a[(_0x257e76(0xc1))](0x674af7,lightIntensity);light2[_0x257e76(0xaa)][_0x257e76(0xad)](-29.085,-17.7,0x0);const light3=new _0x569c4a[(_0x257e76(0xc1))](0xd33eea,lightIntensity);light3[_0x257e76(0xaa)][_0x257e76(0xad)](-21.5,18.5,-0x2a),scene[_0x257e76(0x9c)](light1,light2,light3),objectRotationGroup[_0x257e76(0x9c)](cTopRock,cBottomRock,cShards1,cShards2),scene[_0x257e76(0x9c)](objectRotationGroup);!portraitMode?cBottomRock[_0x257e76(0xaa)]['y']=-0.03:cBottomRock[_0x257e76(0xaa)]['y']=-0.05;function init(){var _0x14a2d0=_0x257e76;scene=new _0x569c4a[(_0x14a2d0(0x9a))](),container=document[_0x14a2d0(0x94)](_0x14a2d0(0x97)),renderer=new _0x569c4a[(_0x14a2d0(0xb4))]({'antialias':!![],'alpha':!![]}),renderer[_0x14a2d0(0x98)](window[_0x14a2d0(0x93)],window['innerHeight']),renderer[_0x14a2d0(0x9f)](window[_0x14a2d0(0xba)]),container[_0x14a2d0(0x9b)](renderer[_0x14a2d0(0x91)]),camera=new _0x569c4a[(_0x14a2d0(0xa6))](0x1e,window[_0x14a2d0(0x93)]/window['innerHeight'],0.01,0x2710),!portraitMode?camera[_0x14a2d0(0xaa)][_0x14a2d0(0xad)](0x0,0.5,0x19):camera[_0x14a2d0(0xaa)][_0x14a2d0(0xad)](0x0,0.5,0x2d),window[_0x14a2d0(0xab)](_0x14a2d0(0xbf),onWindowResize,![]);}gsap[_0x257e76(0x90)](ScrollTrigger),ScrollTrigger[_0x257e76(0xc4)]({'immediateRender':![],'scrub':1.5});let mainAnim=gsap[_0x257e76(0xa8)]({'scrollTrigger':{'trigger':_0x257e76(0xb3),'start':_0x257e76(0xc0),'end':_0x257e76(0xbd),'toggleActions':_0x257e76(0x9d)}});!portraitMode?mainAnim['to'](cTopRock[_0x257e76(0xaa)],{'y':0.6,'ease':_0x257e76(0x8f)})['to'](cBottomRock[_0x257e76(0xaa)],{'y':-0.6,'ease':_0x257e76(0x8f)},'<')['to'](camera['position'],{'x':-0x4,'ease':'power1.inOut'})['to'](cTopRock[_0x257e76(0xaa)],{'y':1.6,'ease':_0x257e76(0x8f)},'<')['to'](cBottomRock['position'],{'y':-1.6,'ease':_0x257e76(0x8f)},'<')['to'](cTopRock[_0x257e76(0xaa)],{'y':0xa,'ease':_0x257e76(0x8f)})['to'](cBottomRock['position'],{'y':-0x3,'ease':_0x257e76(0x8f)},'<')['to'](cShards1[_0x257e76(0xaa)],{'y':0.5,'ease':_0x257e76(0x8f)},'<')['to'](cShards2[_0x257e76(0xaa)],{'y':0.2,'ease':_0x257e76(0x8f)},'<')['to'](cBoats[_0x257e76(0xaa)],{'y':0.8,'ease':_0x257e76(0x8f)},'<')['to'](cTinyHuman[_0x257e76(0xaa)],{'x':0x5,'z':0xb,'ease':'power1.inOut'},'<')['to'](camera['position'],{'x':0x4,'ease':_0x257e76(0x8f)},'<')['to'](camera['position'],{'z':0xf,'ease':_0x257e76(0x8f)},'<'):mainAnim['to'](cTopRock['position'],{'y':0.8,'ease':'power1.inOut'})['to'](cBottomRock[_0x257e76(0xaa)],{'y':-0.8,'ease':'power1.inOut'},'<')['to'](camera[_0x257e76(0xaa)],{'x':-0x4,'ease':'power1.inOut'})['to'](cTopRock[_0x257e76(0xaa)],{'y':0x2,'ease':'power1.inOut'},'<')['to'](cBottomRock[_0x257e76(0xaa)],{'y':-0x2,'ease':_0x257e76(0x8f)},'<')['to'](cTopRock[_0x257e76(0xaa)],{'y':0x1e,'ease':_0x257e76(0x8f)})['to'](cBottomRock['position'],{'y':-0x3,'ease':_0x257e76(0x8f)},'<')['to'](cShards1['position'],{'y':0.5,'ease':_0x257e76(0x8f)},'<')['to'](cShards2['position'],{'y':0.2,'ease':_0x257e76(0x8f)},'<')['to'](cBoats[_0x257e76(0xaa)],{'y':0.8,'ease':_0x257e76(0x8f)},'<')['to'](cTinyHuman[_0x257e76(0xaa)],{'x':2.4,'z':0x12,'ease':_0x257e76(0x8f)},'<')['to'](camera[_0x257e76(0xaa)],{'x':0x2,'ease':_0x257e76(0x8f)},'<')['to'](camera[_0x257e76(0xaa)],{'y':0x4,'ease':_0x257e76(0x8f)},'<')['to'](camera[_0x257e76(0xaa)],{'z':0x1c,'ease':_0x257e76(0x8f)},'<');function onWindowResize(){var _0x5bbc3d=_0x257e76,_0x35448a=window[_0x5bbc3d(0x93)],_0x274495=window['innerHeight'];camera['aspect']=_0x35448a/_0x274495,camera[_0x5bbc3d(0xbe)](),renderer[_0x5bbc3d(0x98)](_0x35448a,_0x274495);}function animate(){var _0x31a3a3=_0x257e76;const _0x41c21e=clock['getElapsedTime']();cTopRock[_0x31a3a3(0xae)]['y']+=0.001,cBottomRock[_0x31a3a3(0xae)]['y']+=0.001,cShards1[_0x31a3a3(0xae)]['y']+=0.001,cShards2[_0x31a3a3(0xae)]['y']+=0.001,cBoats['rotation']['y']+=0.001,cTinyHuman[_0x31a3a3(0xaa)]['y']=Math[_0x31a3a3(0xc5)](_0x41c21e)/0x14+tinyHumanHeight,requestAnimationFrame(animate),renderer[_0x31a3a3(0xc3)](scene,camera);}
+import * as THREE from 'https://cdn.skypack.dev/three@0.133/build/three.module.js';
+
+var camera, scene, renderer, container;
+
+var objectRotationGroup = new THREE.Object3D();
+
+const clock = new THREE.Clock()
+
+var objectDummy = new THREE.Object3D();
+var cTopRock = new THREE.Object3D(),
+    cBottomRock = new THREE.Object3D(),
+    cShards1 = new THREE.Object3D(),
+    cShards2 = new THREE.Object3D(),
+    cBoats = new THREE.Object3D(),
+    cTinyHuman = new THREE.Object3D();
+    
+let portraitMode = false;
+
+var lightIntensity = 1;
+
+if (window.innerWidth / window.innerHeight < 1) {
+    portraitMode = true;
+};
+
+init();
+
+scene.add(objectDummy);
+
+animate();
+
+if(portraitMode)
+{
+    var tinyHumanHeight = 2;
+}
+else
+{
+    var tinyHumanHeight = 0;
+}
+
+
+const loadingManager = new THREE.LoadingManager();
+
+loadingManager.onLoad = function () {
+    console.log("Loading finished")
+}
+
+// MODEL loader
+
+const loader = new THREE.ObjectLoader(loadingManager);
+loader.load("https://cdn.jsdelivr.net/gh/micaparat/mic-server/cracked/scene3.json", function (obj) {
+    // Add the loaded object to the scene
+    objectDummy.add(obj);
+
+    cTopRock.add(objectDummy.getObjectByName('top_rock'), objectDummy.getObjectByName('top_pink'));
+    cBottomRock.add(objectDummy.getObjectByName('bottom_rock'), objectDummy.getObjectByName('bottom_pink'));
+    cShards1.add(objectDummy.getObjectByName('shards1'));
+    cShards2.add(objectDummy.getObjectByName('shards2'));
+    cBoats.add(objectDummy.getObjectByName('boats'));
+
+    scene.add(cTopRock);
+    scene.add(cBottomRock);
+    scene.add(cShards1);
+    scene.add(cShards2);
+    scene.add(cBoats);
+
+},
+);
+loader.load("https://cdn.jsdelivr.net/gh/micaparat/mic-server/cracked/tinyhuman.json", function (obj) {
+    // Add the loaded object to the scene
+    objectDummy.add(obj);
+
+    cTinyHuman.add(objectDummy.getObjectByName('human'));
+
+    scene.add(cTinyHuman);
+},
+);
+
+cTinyHuman.position.set(0,tinyHumanHeight,15);
+cTinyHuman.rotation.set(0,Math.PI+0.5,0);
+cTinyHuman.scale.set(0.6,0.6,0.6);
+
+const light1 = new THREE.PointLight(0x0c5f4a,lightIntensity);
+light1.position.set(15.8,12,0);
+const light2 = new THREE.PointLight(0x674af7,lightIntensity);
+light2.position.set(-29.085,-17.7,0);
+const light3 = new THREE.PointLight(0xd33eea,lightIntensity);
+light3.position.set(-21.5,18.5,-42);
+
+scene.add(light1,light2,light3);
+
+objectRotationGroup.add(cTopRock, cBottomRock, cShards1, cShards2)
+scene.add(objectRotationGroup);
+
+if (!portraitMode) {
+    cBottomRock.position.y = -0.03;
+}
+else {
+    cBottomRock.position.y = -0.05;
+}
+
+// MODEL loader ends
+
+function init() {
+    //scene setup
+    scene = new THREE.Scene();
+    container = document.getElementById('threebg');
+    renderer = new THREE.WebGLRenderer({
+        antialias: true,
+        alpha: true
+    });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    container.appendChild(renderer.domElement);
+    // renderer.outputEncoding = THREE.sRGBEncoding;
+    camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.01, 10000);
+
+
+    if (!portraitMode) {
+        camera.position.set(0, 0.5, 25);
+    }
+    else {
+        camera.position.set(0, 0.5, 45);
+    }
+
+    // console.log(portraitMode);
+
+    window.addEventListener('resize', onWindowResize, false);
+    //scene setup
+}
+
+gsap.registerPlugin(ScrollTrigger);
+
+ScrollTrigger.defaults({
+    immediateRender: false,
+    scrub: 1.5
+});
+
+let mainAnim = gsap.timeline({
+    // duration: 1,
+    scrollTrigger: {
+        trigger: "#fullpage",
+        start: "top top",
+        end: "bottom bottom",
+        // markers: true,
+        toggleActions: "restart pause resume pause"
+    },
+
+})
+
+if (!portraitMode) {
+    mainAnim
+        .to(cTopRock.position, { y: 0.6, ease: "power1.inOut" })
+        .to(cBottomRock.position, { y: -0.6, ease: "power1.inOut" }, "<")
+
+        .to(camera.position, { x: -4, ease: "power1.inOut" })
+        .to(cTopRock.position, { y: 1.6, ease: "power1.inOut" }, "<")
+        .to(cBottomRock.position, { y: -1.6, ease: "power1.inOut" }, "<")
+
+        .to(cTopRock.position, { y: 10, ease: "power1.inOut" })
+        .to(cBottomRock.position, { y: -3, ease: "power1.inOut" }, "<")
+        .to(cShards1.position, { y: 0.5, ease: "power1.inOut" }, "<")
+        .to(cShards2.position, { y: 0.2, ease: "power1.inOut" }, "<")
+        .to(cBoats.position, { y: 0.8, ease: "power1.inOut" }, "<")
+        .to(cTinyHuman.position, { x: 5, z: 11, ease: "power1.inOut" }, "<")
+        .to(camera.position, { x: 4, ease: "power1.inOut" }, "<")
+        .to(camera.position, { z: 15, ease: "power1.inOut" }, "<");
+}
+else {
+    mainAnim
+        .to(cTopRock.position, { y: 0.8, ease: "power1.inOut" })
+        .to(cBottomRock.position, { y: -0.8, ease: "power1.inOut" }, "<")
+
+        .to(camera.position, { x: -4, ease: "power1.inOut" })
+        .to(cTopRock.position, { y: 2, ease: "power1.inOut" }, "<")
+        .to(cBottomRock.position, { y: -2, ease: "power1.inOut" }, "<")
+
+        .to(cTopRock.position, { y: 30, ease: "power1.inOut" })
+        .to(cBottomRock.position, { y: -3, ease: "power1.inOut" }, "<")
+        .to(cShards1.position, { y: 0.5, ease: "power1.inOut" }, "<")
+        .to(cShards2.position, { y: 0.2, ease: "power1.inOut" }, "<")
+        .to(cBoats.position, { y: 0.8, ease: "power1.inOut" }, "<")
+        .to(cTinyHuman.position, { x: 2.4, z: 18, ease: "power1.inOut" }, "<")
+        .to(camera.position, { x: 2, ease: "power1.inOut" }, "<")
+        .to(camera.position, { y: 4, ease: "power1.inOut" }, "<")
+        .to(camera.position, { z: 28, ease: "power1.inOut" }, "<");
+}
+
+function onWindowResize() {
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+    renderer.setSize(width, height);
+}
+function animate() {
+
+    const elapsedTime = clock.getElapsedTime()
+
+    cTopRock.rotation.y += 0.001;
+    cBottomRock.rotation.y += 0.001;
+    cShards1.rotation.y += 0.001;
+    cShards2.rotation.y += 0.001;
+    cBoats.rotation.y += 0.001;
+    cTinyHuman.position.y = Math.sin(elapsedTime)/20 + tinyHumanHeight;
+
+    // console.log(cTinyHuman.position.y);
+
+
+    requestAnimationFrame(animate);
+
+
+
+
+    renderer.render(scene, camera);
+}
