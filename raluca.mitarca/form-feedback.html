@@ -1,0 +1,434 @@
+    <style>
+        .feedback-form-field-wrapper.radio-field {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .feedback-form-field-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding-top: 1rem;
+        }
+
+        .radio-button-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 1rem;
+        }
+
+        .radio {
+            padding-top: .5rem;
+        }
+
+        .form-section {
+            padding-top: 2rem;
+        }
+
+        .form-submit-button {
+            padding-top: 2rem;
+        }
+
+        legend,
+        fieldset,
+        select,
+        textarea,
+        input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: .7rem;
+            border: 2px solid #000000;
+            border-radius: .5rem;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            height: 1.5rem;
+            width: 1.5rem;
+            vertical-align: middle;
+        }
+
+        input[type="radio"] {
+            border-radius: 50%;
+        }
+
+        input[type="radio"]:checked {
+            background-image: radial-gradient(#ff4e7e 40%,
+                    transparent calc(40% + 1px));
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            /* Firefox */
+            color: #bba7ae;
+        }
+
+        input[type="checkbox"]:checked {
+            background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg height='800px' width='800px' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 17.837 17.837' xml:space='preserve'%3E%3Cg%3E%3Cpath style='fill:%23ff4e7e;' d='M16.145,2.571c-0.272-0.273-0.718-0.273-0.99,0L6.92,10.804l-4.241-4.27 c-0.272-0.274-0.715-0.274-0.989,0L0.204,8.019c-0.272,0.271-0.272,0.717,0,0.99l6.217,6.258c0.272,0.271,0.715,0.271,0.99,0 L17.63,5.047c0.276-0.273,0.276-0.72,0-0.994L16.145,2.571z'/%3E%3C/g%3E%3C/svg%3E") no-repeat center / 75% auto;
+        }
+    </style>
+    <form method="POST"
+        action="https://docs.google.com/forms/d/e/1FAIpQLScwRdSwKXSN90fpohn4dPxFgKHjAibqA7YLPolrYhQXpSs41g/formResponse">
+        <div class="form-section">
+            <div class="feedback-form-field-wrapper form-title">
+                <h3>Project Details</h3>
+            </div>
+            <div class="feedback-form-field-wrapper form-description">
+                <p>Let's talk about the project that we worked on.</p>
+            </div>
+
+            <div class="feedback-form-field-wrapper">
+                <label for="name">Your name</label> <input name="entry.1394601367" type="text" id="name" required />
+            </div>
+            <div class="feedback-form-field-wrapper">
+                <label for="name">Project name</label> <input name="entry.173419563" type="text" id="name" required />
+            </div>
+
+            <!-- <div class="feedback-form-field-wrapper"><label for="completion">Completion date</label> <input type="date"
+                    id="completion" name="project-completion" value="2023-01-01"></div> -->
+
+
+            <div class="feedback-form-field-wrapper form-title">Please rate your satisfaction level on a scale of 1 to
+                10 (1 being abysmal, 10 being spectacular) for each of the following:</div>
+
+            <div class="feedback-form-field-wrapper form-title">Quality of Work</div>
+
+            <div class="feedback-form-field-wrapper radio-field">
+
+                <div class="radio-button-wrapper">
+                    <!-- The "value" is important -->
+                    <input type="radio" name="entry.998926465" value="1" id="rating1" />
+                    <label for="rating1" class="radio">1</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.998926465" value="2" id="rating2" />
+                    <label for="rating2" class="radio">2</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.998926465" value="3" id="rating3" />
+                    <label for="rating3" class="radio">3</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.998926465" value="4" id="rating4" />
+                    <label for="rating4" class="radio">4</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.998926465" value="5" id="rating5" />
+                    <label for="rating5" class="radio">5</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.998926465" value="6" id="rating6" />
+                    <label for="rating6" class="radio">6</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.998926465" value="7" id="rating7" />
+                    <label for="rating7" class="radio">7</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.998926465" value="8" id="rating8" />
+                    <label for="rating8" class="radio">8</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.998926465" value="9" id="rating9" />
+                    <label for="rating9" class="radio">9</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.998926465" value="10" id="rating10" />
+                    <label for="rating10" class="radio">10</label>
+                </div>
+
+            </div>
+
+            <div class="feedback-form-field-wrapper form-title">Communication</div>
+
+            <div class="feedback-form-field-wrapper radio-field">
+
+                <div class="radio-button-wrapper">
+                    <!-- The "value" is important -->
+                    <input type="radio" name="entry.1509583776" value="1" id="rating1" />
+                    <label for="rating1" class="radio">1</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1509583776" value="2" id="rating2" />
+                    <label for="rating2" class="radio">2</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1509583776" value="3" id="rating3" />
+                    <label for="rating3" class="radio">3</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1509583776" value="4" id="rating4" />
+                    <label for="rating4" class="radio">4</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1509583776" value="5" id="rating5" />
+                    <label for="rating5" class="radio">5</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1509583776" value="6" id="rating6" />
+                    <label for="rating6" class="radio">6</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1509583776" value="7" id="rating7" />
+                    <label for="rating7" class="radio">7</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1509583776" value="8" id="rating8" />
+                    <label for="rating8" class="radio">8</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1509583776" value="9" id="rating9" />
+                    <label for="rating9" class="radio">9</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1509583776" value="10" id="rating10" />
+                    <label for="rating10" class="radio">10</label>
+                </div>
+
+            </div>
+
+            <div class="feedback-form-field-wrapper form-title">Timeliness</div>
+
+            <div class="feedback-form-field-wrapper radio-field">
+
+                <div class="radio-button-wrapper">
+                    <!-- The "value" is important -->
+                    <input type="radio" name="entry.1162705668" value="1" id="rating1" />
+                    <label for="rating1" class="radio">1</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1162705668" value="2" id="rating2" />
+                    <label for="rating2" class="radio">2</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1162705668" value="3" id="rating3" />
+                    <label for="rating3" class="radio">3</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1162705668" value="4" id="rating4" />
+                    <label for="rating4" class="radio">4</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1162705668" value="5" id="rating5" />
+                    <label for="rating5" class="radio">5</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1162705668" value="6" id="rating6" />
+                    <label for="rating6" class="radio">6</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1162705668" value="7" id="rating7" />
+                    <label for="rating7" class="radio">7</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1162705668" value="8" id="rating8" />
+                    <label for="rating8" class="radio">8</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1162705668" value="9" id="rating9" />
+                    <label for="rating9" class="radio">9</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.1162705668" value="10" id="rating10" />
+                    <label for="rating10" class="radio">10</label>
+                </div>
+
+            </div>
+
+            <div class="feedback-form-field-wrapper form-title">Responsiveness</div>
+
+            <div class="feedback-form-field-wrapper radio-field">
+
+                <div class="radio-button-wrapper">
+                    <!-- The "value" is important -->
+                    <input type="radio" name="entry.463701943" value="1" id="rating1" />
+                    <label for="rating1" class="radio">1</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.463701943" value="2" id="rating2" />
+                    <label for="rating2" class="radio">2</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.463701943" value="3" id="rating3" />
+                    <label for="rating3" class="radio">3</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.463701943" value="4" id="rating4" />
+                    <label for="rating4" class="radio">4</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.463701943" value="5" id="rating5" />
+                    <label for="rating5" class="radio">5</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.463701943" value="6" id="rating6" />
+                    <label for="rating6" class="radio">6</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.463701943" value="7" id="rating7" />
+                    <label for="rating7" class="radio">7</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.463701943" value="8" id="rating8" />
+                    <label for="rating8" class="radio">8</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.463701943" value="9" id="rating9" />
+                    <label for="rating9" class="radio">9</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.463701943" value="10" id="rating10" />
+                    <label for="rating10" class="radio">10</label>
+                </div>
+
+            </div>
+
+            <div class="feedback-form-field-wrapper form-title">Professionalism</div>
+
+            <div class="feedback-form-field-wrapper radio-field">
+
+                <div class="radio-button-wrapper">
+                    <!-- The "value" is important -->
+                    <input type="radio" name="entry.515037259" value="1" id="rating1" />
+                    <label for="rating1" class="radio">1</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.515037259" value="2" id="rating2" />
+                    <label for="rating2" class="radio">2</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.515037259" value="3" id="rating3" />
+                    <label for="rating3" class="radio">3</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.515037259" value="4" id="rating4" />
+                    <label for="rating4" class="radio">4</label>
+                </div>
+
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.515037259" value="5" id="rating5" />
+                    <label for="rating5" class="radio">5</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.515037259" value="6" id="rating6" />
+                    <label for="rating6" class="radio">6</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.515037259" value="7" id="rating7" />
+                    <label for="rating7" class="radio">7</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.515037259" value="8" id="rating8" />
+                    <label for="rating8" class="radio">8</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.515037259" value="9" id="rating9" />
+                    <label for="rating9" class="radio">9</label>
+                </div>
+                <div class="radio-button-wrapper">
+                    <input type="radio" name="entry.515037259" value="10" id="rating10" />
+                    <label for="rating10" class="radio">10</label>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="feedback-form-field-wrapper">
+                <label for="long-answer">What did you like the most about working with me?</label><textarea
+                    name="entry.1233602111" rows="4" id="long-answer"></textarea>
+            </div>
+
+            <div class="feedback-form-field-wrapper">
+                <label for="long-answer">What could I have done differently to improve your experience?</label><textarea
+                    name="entry.473216159" rows="4" id="long-answer"></textarea>
+            </div>
+
+            <div class="feedback-form-field-wrapper">
+                <label for="long-answer">Is there anything else you would like to share with me?</label><textarea
+                    name="entry.1866502905" rows="4" id="long-answer"></textarea>
+            </div>
+
+        </div>
+        <div class="form-section">
+
+            <div class="feedback-form-field-wrapper form-title">
+                <h3>Share your thoughts with the world</h3>
+            </div>
+            <div class="feedback-form-field-wrapper form-description">
+                <p>Would you be willing to provide a testimonial for my website? If yes, please share your thoughts
+                    below:</p>
+            </div>
+
+            <div class="feedback-form-field-wrapper">
+                <label for="long-answer">Testimonial for website</label><textarea name="entry.1609689851" rows="4"
+                    name="hhhh" id="long-answer"></textarea>
+            </div>
+
+            <div class="feedback-form-field-wrapper form-title">Some guidelines:</div>
+            <div class="feedback-form-field-wrapper form-description">
+                <ul>
+                    <li>Be specific about the benefits you received from my services, and how my services helped you
+                        achieve your goals.</li>
+                    <li>Use concrete examples and results to illustrate your point.</li>
+                    <li>Keep your testimonial short and concise, focusing on the key benefits and positive experiences
+                        you had while working with me.</li>
+                    <li>Use a positive tone, highlighting the strengths and positive experiences you had while working
+                        with me.</li>
+                    <li>Be honest in your testimonial, and only write what you truly feel about my services.</li>
+                </ul>
+            </div>
+
+            <div class="feedback-form-field-wrapper form-title">
+                <h3>Additional Comments</h3>
+            </div>
+            <div class="feedback-form-field-wrapper form-description">
+                <p>Please use this space to provide any additional comments you may have.</p>
+            </div>
+
+
+            <div class="feedback-form-field-wrapper">
+                <textarea rows="4" name="entry.144843316" id="long-answer"></textarea>
+            </div>
+            <div class="form-submit-button">
+                <button class="button" type="submit">Submit</button>
+            </div>
+
+
+
+        </div>
+    </form>
